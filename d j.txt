@@ -1,0 +1,14 @@
+FROM openjdk:17-jdk-alpine
+COPY . /a
+WORKDIR /a
+RUN javac a.java
+CMD ["java", "a"]
+
+
+
+
+public class a{
+    public static void main (String args[]){
+        System.out.println("hello");
+    }
+}
